@@ -1,0 +1,620 @@
+body {
+    margin: 0;
+    font-family: 'Electrolize';
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+#movesTable {
+    font-family: 'Electrolize';
+}
+
+.symbols-align {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pokemonHeadSymbols {
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemonHeadSymbols {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pokedexHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: crimson;
+}
+
+.pokemon-info-card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+}
+
+.red-bg{
+    background-color: crimson;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.pokedexHead input {
+    width: 110px;
+    border: 1px solid;
+    margin-right: 21px;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.pokedexHead a{
+    width: 30%;
+}
+
+.pokedexHead img {
+    width: 100%;
+    padding: 8px;
+}
+
+.pokemonInfoCard {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-white {
+    background-color: white;
+}
+
+.pokemonSmallCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.smallCard {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin: 8px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    justify-content: space-between;
+    color: white;
+}
+
+.smallCardHeading {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+
+.smallCardImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    width: auto;
+    max-height: 70%;
+    height: auto;
+}
+
+.smallCardImg img {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+}
+
+.smallCardsRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.smallCardType {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    border: 1px solid;
+    border-radius: 7px;
+    margin-right: 4px;
+    padding: 0 2px 0 2px;
+    width: 40px;
+    margin-bottom: 4px;
+}
+
+.smallCardID {
+    padding-left: 8px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pointer:hover {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.grass-color {
+    background-color: #47d1b1;
+}
+
+.grass-type-color {
+    color: white;
+    background-color: #6ed1ba;
+}
+
+.fire-color {
+    background-color: #fb6c6c;
+}
+
+.fire-type-color {
+    color: white;
+    background-color: #F88E8D;
+}
+
+.water-color {
+    background-color: #76bffe;
+}
+
+.water-type-color {
+    color: white;
+    background-color: #9ccffc;
+}
+
+.bug-color {
+    background-color: #336333;
+}
+
+.bug-type-color {
+    color: white;
+    background-color: #597359;
+}
+
+.normal-color {
+    background-color: #A8A878;
+}
+
+.normal-type-color {
+    color: white;
+    background-color: #a9a992;
+}
+
+.poison-color {
+    background-color: #a052a0;
+}
+
+.poison-type-color {
+    color: white;
+    background-color: #a678a6;
+}
+
+.electric-color {
+    background-color: #FFD700;
+}
+
+.electric-type-color {
+    color: white;
+    background-color: #ffe347;
+}
+
+.ground-color {
+    background-color: #E0C068;
+}
+
+.ground-type-color {
+    color: white;
+    background-color: #e0cd98;
+}
+
+.fairy-color {
+    background-color: #ff78bb;
+}
+
+.fairy-type-color {
+    color: white;
+    background-color: #ffaad4;
+}
+
+.fighting-color {
+    background-color: #C03028;
+}
+
+.fighting-type-color {
+    color: white;
+    background-color: #c24c45;
+}
+
+.psychic-color {
+    background-color: #FF1493;
+}
+
+.psychic-type-color {
+    color: white;
+    background-color: #ff46a9;
+}
+
+.rock-color {
+    background-color: #A8A878;
+}
+
+.rock-type-color {
+    color: white;
+    background-color: #a9a991;
+}
+
+.ghost-color {
+    background-color: #705898;
+}
+
+.ghost-type-color {
+    color: white;
+    background-color: #7d6d97;
+}
+
+.ice-color {
+    background-color: #98D8D8;
+}
+
+.ice-type-color {
+    color: white;
+    background-color: #a0d5d5;
+}
+
+.dragon-color {
+    background-color: #7038F8;
+}
+
+.dragon-type-color {
+    color: white;
+    background-color: #8d5cff;
+}
+
+.dark-color {
+    background-color: #352A3E;
+}
+
+.dark-type-color {
+    color: white;
+    background-color: #3f3645;
+}
+
+.steel-color {
+    background-color: #A8A8A8;
+}
+
+.steel-type-color {
+    color: white;
+    background-color: #cecdcd;
+}
+
+.pokemonHeader {
+    color: white;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    min-height: 45vh;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+#pokemonHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#pokemonHeader p {
+    display: flex;
+    align-items: flex-end;
+}
+
+.pokemonFirstInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 8px;
+}
+
+.pokemonFirstInfo h1 {
+    margin: 4px 0 4px 0;
+}
+
+#types {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.type {
+    border: 1px solid;
+    border-radius: 12px;
+    width: 70px;
+    padding: 2px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+#currentPokemonID {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 98%;
+}
+
+.info-container {
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    min-height: 80px;
+    margin-top: -37px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pkmnImg {
+    margin-top: -180px;
+    margin-bottom: 4px;
+    max-width: 30%;
+    width: auto;
+}
+
+.pokemonStats {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 320px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.inactive-stat:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+}
+
+.active-stat {
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+}
+
+.inactive-stat {
+    color: lightgray;
+}
+
+.rendered-active-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.rendered-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 32px;
+}
+
+.stat-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.width40 {
+    width: 40%;
+}
+
+.width60 {
+    width: 60%;
+}
+
+.btn-column {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.btn {
+    border: 1px solid;
+    border-radius: 12px;
+    width: 40px;
+    text-align: center;
+    border-color: burlywood;
+    color: white;
+    margin-bottom: 2px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.stat-chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.my-stat-chart {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: inherit;
+    width: 90%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Zentrieren des Tabellencontainers auf der Seite */
+.table-container {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.rotate-90-img{
+    transform: rotate(270deg);
+    height: 100px;
+}
+
+.rotate-x-img{
+    transform: rotate(90deg);
+    height: 100px;
+}
+
+@media(min-height: 900px) and (min-width: 850px) {
+    .pokemonStats {
+        height: 390px;
+    }
+    .my-stat-chart {
+        margin-top: 16px;
+    }
+    #myChart {
+
+        height: 300px !important;
+    }
+}
+
+
+@media(max-width: 500px) {
+    #pkmnImg {
+        margin-top: -130px;
+        max-width: 40%;
+    }
+
+    .smallCard {
+        width: 160px;
+        height: 160px;
+        font-size: 14px;
+    }
+
+    .smallCard img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+    .pokemonInfoCard{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    .pokemonHeader{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .pokemonStats{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .red-bg{
+        display: none;
+    } 
+}
+
+@media(max-width: 900px){
+    #pkmnImg{
+        max-width: 37%;
+    }
+}
+
+
+
+
+/* electrolize-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Electrolize';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/electrolize-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }

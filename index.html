@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Pokédex</title>
+</head>
+
+<body onload="init()">
+    <div id="pokedexHead" class="pokedexHead">
+        <a href="index.html"><img src="img/pokedexImg.jpg"></a>
+        <input id="searchPokemon" type="text" placeholder="Search..." onchange="handleKeyPress(event)">
+    </div>
+    <div id="pokemonInfoSection" class="pokemon-info-card-section d-none">
+        <div class="red-bg">
+            <img class="rotate-90-img" src="/img/pokedexImg.jpg" alt="">
+        </div>
+        <div id="pokemonInfoCard" class="pokemonInfoCard">
+            <div id="pokemonHeader" class="pokemonHeader">
+                <div id="pokemonHead" class="pokemonHeadSymbols">
+                </div>
+                <div class="pokemonFirstInfo">
+                    <h1 id="pokemonName"></h1>
+                    <div id="currentPokemonID"></div>
+                    <div id="types"></div>
+                </div>
+            </div>
+            <div class="info-container">
+                <img id="pkmnImg">
+            </div>
+            <div id="pokemonStats" class="pokemonStats"></div>
+        </div>
+        <div class="red-bg">
+            <img class="rotate-x-img" src="/img/pokedexImg.jpg">
+            
+        </div>
+    </div>
+    <div id="smallCards" class="pokemonSmallCards"></div>
+</body>
+
+</html>
