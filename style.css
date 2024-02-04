@@ -39,18 +39,18 @@ body {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    background-color: crimson;
+    background-color: #FF0000;
 }
 
 .pokemon-info-card-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: crimson;
+    background-color: #161616;
 }
 
 .red-bg{
-    background-color: crimson;
+    background-color: #161616;
     width: 15%;
     display: flex;
     justify-content: center;
@@ -93,9 +93,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    min-height: 100vh;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #161616;
 }
 
 .smallCard {
@@ -126,9 +127,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 90%;
-    width: auto;
     max-height: 70%;
-    height: auto;
 }
 
 .smallCardImg img {
@@ -406,7 +405,7 @@ body {
 .pokemonStats {
     display: flex;
     flex-direction: column;
-    margin-top: 0px;
+    margin-top: -15px;
     width: 100%;
     background-color: white;
     border-bottom-left-radius: 16px;
